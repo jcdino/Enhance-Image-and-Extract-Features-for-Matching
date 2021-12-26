@@ -8,8 +8,6 @@ new_im = zeros(size(im));
 for h=1:H
     for w = 1:W
         new_im(h,w) = im(h,w);
-        % 뒤에 게산에서 num이 255가 넘어가도 그 값을 유지하기 위해
-        % uint8형태의 im를 double형태의 값들을 담은 행렬로 다시 정의함
     end
 end
 m = (255/n);
@@ -69,8 +67,3 @@ for h = 1:H
         %result의 각 pixel에 histogram equalizaiton이된 값을 저장한다.
     end
 end
-
-
-
-
-
