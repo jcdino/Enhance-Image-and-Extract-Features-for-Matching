@@ -5,6 +5,8 @@ Professor : Byeongkeun Kang<br />
 ## Context
 1. [Image Blending](#1-image_blending)
 2. [Histogram Equalization](#2-histogram-equalization)
+3. [Gaussian Filtering](#3-gaussian-filtering)
+4. [Median Filtering](#4-median-filtering)
 ## 1. Image_Blending
 - Implement a function that creates a composite image from two images, im1 and im2.
 - The function has three inputs (im1, im2, α) and one output (result). 
