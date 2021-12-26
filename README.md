@@ -30,22 +30,23 @@ Professor : Byeongkeun Kang<br />
 - σ: standard deviation of Gaussian filter
 - The size of filter: (2×⌈2σ⌉+1 by 2×⌈2σ⌉+1)
 - For boundary region, if a pixel is out of image, assume the pixel has the same intensity with the closest pixel
-### original &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
+### original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
 ![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422098-d0945ac0-37b9-4f90-8370-2a81200de076.png)
 ![result_GaussianFilter](https://user-images.githubusercontent.com/90415099/147422101-ef9f561f-0a02-478d-8050-c37726fca5c0.png)
 ## 4. Median Filtering
 - Implement a function that processes median filtering on an image.
 - The function has two inputs (im, filterSize) and one output (result).
 - For boundary region, if a pixel is out of image, assume the pixel has the same intensity with the closest pixel.
-### original &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
+### original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
 ![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422148-1646917c-5ce7-4096-84a3-26ed642d9acf.png)
 ![result_medianFilter](https://user-images.githubusercontent.com/90415099/147422150-0e3c036f-51a5-404d-a1d1-334593ae8be0.png)
 ## 5. Bilinear Interpolation
 - Implement a function that processes bilinear interpolation to increase the size of an image.
 - The function has two inputs (im, scale) and one output (result).
 - For elements at right-end and bottom-end, assume the pixel has the same intensity with the closest pixel.
-### original
+### original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
 ![Lenna](https://user-images.githubusercontent.com/90415099/147422446-abbec39c-cc36-42af-809b-42ee92e4a6e3.png)
+![result_bilinearInterpolation](https://user-images.githubusercontent.com/90415099/147422467-48f5bd7f-a5c3-4583-b587-555a3623e894.png)
 
 ## 6. Edge Detection (Sobel operator)
 - Implement a function that detects edges using Sobel operator on an image.
