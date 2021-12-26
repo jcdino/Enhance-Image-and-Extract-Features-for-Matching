@@ -39,3 +39,12 @@ Professor : Byeongkeun Kang<br />
 ### original &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
 ![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422148-1646917c-5ce7-4096-84a3-26ed642d9acf.png)
 ![result_medianFilter](https://user-images.githubusercontent.com/90415099/147422150-0e3c036f-51a5-404d-a1d1-334593ae8be0.png)
+## 5. Bilinear Interpolation
+- Implement a function that processes bilinear interpolation to increase the size of an image.
+- The function has two inputs (im, scale) and one output (result).
+- For elements at right-end and bottom-end, assume the pixel has the same intensity with the closest pixel.
+## 6. Edge Detection (Sobel operator)
+- Implement a function that detects edges using Sobel operator on an image.
+- The function has one input (im) and one output (result).
+- The output of the function should be the magnitude of the gradient of an input image.
+- For boundary region, if a pixel is out of image, assume the pixel has the same intensity with the closest pixel.
