@@ -3,8 +3,8 @@ Seoul National University of Science and Technology<br />
 Department of Electronic and IT Media Engineering<br />
 Professor : Byeongkeun Kang<br />
 ## Context
-1. [Image Blending](##image-blending)
-2. [Histogram Equalization](##histogram-equalization)
+1. [Image Blending](#1-image-blending)
+2. [Histogram Equalization](#2-histogram-equalization)
 ## 1. Image_Blending
 - Implement a function that creates a composite image from two images, im1 and im2.
 - The function has three inputs (im1, im2, α) and one output (result). 
