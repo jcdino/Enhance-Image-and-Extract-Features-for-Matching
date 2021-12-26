@@ -18,3 +18,19 @@ Professor : Byeongkeun Kang<br />
 ![Unequalized_Hawkes_Bay_NZ](https://user-images.githubusercontent.com/90415099/147421813-e6f11c03-3936-4648-8d59-66ae1d8dfb60.jpg)
 ### result
 ![result_histEq](https://user-images.githubusercontent.com/90415099/147421832-0fea70a7-5808-4676-98d9-e2c48e72d0e6.png)
+## 3. Gaussian Filtering
+- Implement a function that processes Gaussian filtering on an image using a Gaussian filter.
+- The function has two inputs (im, σ) and one output (result).
+- σ: standard deviation of Gaussian filter
+- The size of filter: (2×⌈2σ⌉+1 by 2×⌈2σ⌉+1)
+- For boundary region, if a pixel is out of image, assume the pixel has the same intensity with the closest pixel
+### orginal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
+![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422098-d0945ac0-37b9-4f90-8370-2a81200de076.png)
+![result_GaussianFilter](https://user-images.githubusercontent.com/90415099/147422101-ef9f561f-0a02-478d-8050-c37726fca5c0.png)
+## 4. Median Filtering
+- Implement a function that processes median filtering on an image.
+- The function has two inputs (im, filterSize) and one output (result).
+- For boundary region, if a pixel is out of image, assume the pixel has the same intensity with the closest pixel.
+### orginal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
+![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422148-1646917c-5ce7-4096-84a3-26ed642d9acf.png)
+![result_medianFilter](https://user-images.githubusercontent.com/90415099/147422150-0e3c036f-51a5-404d-a1d1-334593ae8be0.png)
