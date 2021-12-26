@@ -1,4 +1,3 @@
-
 function result = histEq(im, n)
 
 %histogram 생성
@@ -28,7 +27,6 @@ prob = hist / (H*W);
 % normalized된 histogram 생성
 figure; plot(0:n-1, prob);
 % normalized된 histogram의 figure2 생성
-
 
 cum_prob = zeros(n,1);
 cum_prob(1) = prob(1);
