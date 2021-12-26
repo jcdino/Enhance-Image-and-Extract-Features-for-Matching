@@ -1,4 +1,4 @@
-# Image_Processing
+# Image Processing
 Seoul National University of Science and Technology<br />
 Department of Electronic and IT Media Engineering<br />
 Professor : Byeongkeun Kang<br />
