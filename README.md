@@ -7,6 +7,7 @@ Professor : Byeongkeun Kang<br />
 2. [Histogram Equalization](#2-histogram-equalization)
 3. [Gaussian Filtering](#3-gaussian-filtering)
 4. [Median Filtering](#4-median-filtering)
+5. [Bilinear Interpolation]
 ## 1. Image Blending
 - Implement a function that creates a composite image from two images, im1 and im2.
 - The function has three inputs (im1, im2, α) and one output (result). 
@@ -43,6 +44,9 @@ Professor : Byeongkeun Kang<br />
 - Implement a function that processes bilinear interpolation to increase the size of an image.
 - The function has two inputs (im, scale) and one output (result).
 - For elements at right-end and bottom-end, assume the pixel has the same intensity with the closest pixel.
+### original
+![Lenna](https://user-images.githubusercontent.com/90415099/147422446-abbec39c-cc36-42af-809b-42ee92e4a6e3.png)
+
 ## 6. Edge Detection (Sobel operator)
 - Implement a function that detects edges using Sobel operator on an image.
 - The function has one input (im) and one output (result).
