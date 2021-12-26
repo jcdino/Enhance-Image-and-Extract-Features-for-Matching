@@ -45,8 +45,9 @@ Professor : Byeongkeun Kang<br />
 - Implement a function that processes bilinear interpolation to increase the size of an image.
 - The function has two inputs (im, scale) and one output (result).
 - For elements at right-end and bottom-end, assume the pixel has the same intensity with the closest pixel.
-### original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
+### original
 ![Lenna](https://user-images.githubusercontent.com/90415099/147422446-abbec39c-cc36-42af-809b-42ee92e4a6e3.png)
+### result
 ![result_bilinearInterpolation](https://user-images.githubusercontent.com/90415099/147422467-48f5bd7f-a5c3-4583-b587-555a3623e894.png)
 
 ## 6. Edge Detection (Sobel operator)
@@ -54,3 +55,8 @@ Professor : Byeongkeun Kang<br />
 - The function has one input (im) and one output (result).
 - The output of the function should be the magnitude of the gradient of an input image.
 - For boundary region, if a pixel is out of image, assume the pixel has the same intensity with the closest pixel.
+### original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sobel Edge Detector
+![Lenna](https://user-images.githubusercontent.com/90415099/147422446-abbec39c-cc36-42af-809b-42ee92e4a6e3.png)
+![result_SobelEdge](https://user-images.githubusercontent.com/90415099/147422571-0cf6d9f8-5315-4aa3-93e6-ab820e5b235b.png)
+### Sobel Edge Detector with Median Filter
+![result_SobelEdge_medianFilter](https://user-images.githubusercontent.com/90415099/147422573-8797cdef-b404-4738-96d2-41efd661c019.png)
