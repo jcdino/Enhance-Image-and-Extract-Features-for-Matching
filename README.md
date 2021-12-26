@@ -8,7 +8,7 @@ Professor : Byeongkeun Kang<br />
 3. [Gaussian Filtering](#3-gaussian-filtering)
 4. [Median Filtering](#4-median-filtering)
 5. [Bilinear Interpolation](#5-bilinear-interpolation)
-6. [Edge Detection](#6-edge-detection-sobel-operator)
+6. [Edge Detection (Sobel operator)](#6-edge-detection-sobel-operator)
 ## 1. Image Blending
 - Implement a function that creates a composite image from two images, im1 and im2.
 - The function has three inputs (im1, im2, α) and one output (result). 
