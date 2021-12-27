@@ -9,6 +9,7 @@ Professor : Byeongkeun Kang<br />
 4. [Median Filtering](#4-median-filtering)
 5. [Bilinear Interpolation](#5-bilinear-interpolation)
 6. [Edge Detection (Sobel operator)](#6-edge-detection-sobel-operator)
+7. Edge Detection (Marr–Hildreth algorithm)
 ## 1. Image Blending
 - Implement a function that creates a composite image from two images, im1 and im2.
 - The function has three inputs (im1, im2, α) and one output (result). 
@@ -49,7 +50,6 @@ Professor : Byeongkeun Kang<br />
 ![Lenna](https://user-images.githubusercontent.com/90415099/147422446-abbec39c-cc36-42af-809b-42ee92e4a6e3.png)
 ### result
 ![result_bilinearInterpolation](https://user-images.githubusercontent.com/90415099/147422467-48f5bd7f-a5c3-4583-b587-555a3623e894.png)
-
 ## 6. Edge Detection (Sobel operator)
 - Implement a function that detects edges using Sobel operator on an image.
 - The function has one input (im) and one output (result).
@@ -60,3 +60,14 @@ Professor : Byeongkeun Kang<br />
 ![result_SobelEdge](https://user-images.githubusercontent.com/90415099/147422571-0cf6d9f8-5315-4aa3-93e6-ab820e5b235b.png)
 ### Sobel Edge Detector with Median Filter
 ![result_SobelEdge_medianFilter](https://user-images.githubusercontent.com/90415099/147422573-8797cdef-b404-4738-96d2-41efd661c019.png)
+## 7. Edge Detection (Marr–Hildreth algorithm)
+- Implement a function that detects edges using the Marr–Hildreth algorithm on an image.
+- The function has three inputs (im, σ, threshold) and one output (result).
+- The output of the function should be a binary edge map.
+- σ: standard deviation of Gaussian filter.
+- threshold: threshold for zero-crossing.
+- Size of LoG filter: (2×⌈3σ⌉+1 by 2×⌈3σ⌉+1)
+- For boundary region, if a pixel is out of image, assume the pixel has the same intensity with the closest pixel.
+### original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
+![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422893-4821bffd-7a69-436b-8189-4dbc2952caed.png)
+![result_ MarrHildrethEdge](https://user-images.githubusercontent.com/90415099/147422900-a1937a69-8ce0-439d-8ff9-7a073643515e.png)
