@@ -9,7 +9,7 @@ Professor : Byeongkeun Kang<br />
 4. [Median Filtering](#4-median-filtering)
 5. [Bilinear Interpolation](#5-bilinear-interpolation)
 6. [Edge Detection (Sobel operator)](#6-edge-detection-sobel-operator)
-7. Edge Detection (Marr–Hildreth algorithm)
+7. [Edge Detection (Marr–Hildreth algorithm)](#7-edge-detection-marrhildreth-algorithm)
 ## 1. Image Blending
 - Implement a function that creates a composite image from two images, im1 and im2.
 - The function has three inputs (im1, im2, α) and one output (result). 
