@@ -1,4 +1,4 @@
- close all; clear all; clc;
+close all; clear all; clc;
 
 im1 = imread('Notre_Dame_1.png');
 im2 = imread('Notre_Dame_2.png');
@@ -60,9 +60,3 @@ for idx = 1:size(matching,1)
 end
 
 imwrite(im_result, 'FeatureMatching.jpg');
-
-
-
-
-
-
