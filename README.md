@@ -10,7 +10,7 @@ Professor : Byeongkeun Kang<br />
 5. [Bilinear Interpolation](#5-bilinear-interpolation)
 6. [Edge Detection (Sobel operator)](#6-edge-detection-sobel-operator)
 7. [Edge Detection (Marr–Hildreth algorithm)](#7-edge-detection-marrhildreth-algorithm)
-8. [Feature Matching]
+8. [Feature Matching](#8-feature-matching)
 ## 1. Image Blending
 - Implement a function that creates a composite image from two images, im1 and im2.
 - The function has three inputs (im1, im2, α) and one output (result). 
@@ -73,10 +73,22 @@ Professor : Byeongkeun Kang<br />
 ![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422893-4821bffd-7a69-436b-8189-4dbc2952caed.png)
 ![result_ MarrHildrethEdge](https://user-images.githubusercontent.com/90415099/147422900-a1937a69-8ce0-439d-8ff9-7a073643515e.png)
 ## 8. Feature Matching
-orginal <br />
+### orginal
 ![Notre_Dame_1](https://user-images.githubusercontent.com/90415099/147423284-7d80fcc5-c239-4921-ae15-7d41c9b33244.png)
 ![Notre_Dame_2](https://user-images.githubusercontent.com/90415099/147423285-b08b9c54-e32f-468a-a78c-001c2f02bc5f.png)
 ### Harris Corner Detector
+- Implement a function “detectHarrisCorner” that detects interest points using the Harris corner detection algorithm on an image.
+- The function has seven inputs (im, fx_operator, fy_operator, Gaussian_sigma, alpha, C_thres, NMS_ws) and two outputs (corner, C).
+- The output “corner” should contain [x, y] coordinates of interest points.
+- The output “C” should contain a cornerness score map which has the same size as the input image.
+- im: input image.
+- fx_operator, fy_operator: vector to use to compute derivatives along x-direction and y-direction.
+- Gaussian_sigma: standard deviation of Gaussian filter for filtering squares/products of the derivative maps.
+- alpha: for the cornerness score map.
+- C_thres: threshold for the cornerness score map.
+- NMS_ws: window size for non-maximum suppression.
+- Size of Gaussian filter: (2×⌈2σ⌉+1 by 2×⌈2σ⌉+1).
+- For boundary region, ignore interest points (in 8 pixels from any boundary).<br />
 The cornerness of the two images<br />
 ![Cornerness_1](https://user-images.githubusercontent.com/90415099/147423188-d54464c6-e048-42bb-a829-4f248067dcc3.jpg)
 ![Cornerness_2](https://user-images.githubusercontent.com/90415099/147423189-0542c70f-26e8-494c-b599-1fd56346af4a.jpg)<br />
@@ -84,3 +96,19 @@ The detected corner of the two images<br />
 ![CornerDetection_1](https://user-images.githubusercontent.com/90415099/147423242-dd860c21-41cb-4b1f-a89d-444d621f175d.jpg)
 ![CornerDetection_2](https://user-images.githubusercontent.com/90415099/147423243-3203b303-61e8-41dc-997b-54e9013ea932.jpg)
 ### SIFT Descriptor
+- Implement a function “extractSIFT” that extracts SIFT features using the Scale Invariant Feature Transform (SIFT) algorithm around interest points.
+- The function has five inputs (im, fx_operator, fy_operator, corner, Gaussian_sigma) and one output (SIFT).
+- The output “SIFT” should contain SIFT features for all “corner” points. (size: # of corner X 128) image.
+- im: input image.
+- fx_operator, fy_operator: vector to use to compute derivatives along x-direction and y-direction.
+- corner: from “detectHarrisCorner”.
+- Gaussian_sigma: standard deviation of the Gaussian filter for filtering the magnitude of the gradient.
+- Size of Gaussian filter: (16×16).
+- For boundary region, ignore interest points (in 8 pixels from any boundary).
+### Feature Matching using Distance Ratio
+- Implement a function “matchFeatures” that matches SIFT features using the nearest neighbor distance ratio algorithm between two images.
+- The function has two inputs (SIFT1, SIFT2) and one output (matching).
+- The output “matching” should contain two columns. The first column should contain the index of matched interest points from image 2. The second column should contain distance ratios. (size: # of corners in SIFT1 X 2)
+- SIFT1, SIFT2: from “extractSIFT”.
+### Result
+![FeatureMatching](https://user-images.githubusercontent.com/90415099/147423368-165501ce-e8c9-4f90-a34a-997f66f3b448.jpg)
