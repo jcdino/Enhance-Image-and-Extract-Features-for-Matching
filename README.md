@@ -73,7 +73,7 @@ Professor : Byeongkeun Kang<br />
 ![Lenna_salt_pepper](https://user-images.githubusercontent.com/90415099/147422893-4821bffd-7a69-436b-8189-4dbc2952caed.png)
 ![result_ MarrHildrethEdge](https://user-images.githubusercontent.com/90415099/147422900-a1937a69-8ce0-439d-8ff9-7a073643515e.png)
 ## 8. Feature Matching
-### orginal
+### Orginal Image
 ![Notre_Dame_1](https://user-images.githubusercontent.com/90415099/147423284-7d80fcc5-c239-4921-ae15-7d41c9b33244.png)
 ![Notre_Dame_2](https://user-images.githubusercontent.com/90415099/147423285-b08b9c54-e32f-468a-a78c-001c2f02bc5f.png)
 ### Harris Corner Detector
@@ -110,5 +110,8 @@ The detected corner of the two images<br />
 - The function has two inputs (SIFT1, SIFT2) and one output (matching).
 - The output “matching” should contain two columns. The first column should contain the index of matched interest points from image 2. The second column should contain distance ratios. (size: # of corners in SIFT1 X 2)
 - SIFT1, SIFT2: from “extractSIFT”.
-### Result
+### Result (Distance ratio Threshold=0.5)
 ![FeatureMatching](https://user-images.githubusercontent.com/90415099/147423368-165501ce-e8c9-4f90-a34a-997f66f3b448.jpg)
+
+### Result (Distance ratio Threshold=0.63)
+![그림1](https://user-images.githubusercontent.com/90415099/147423419-8c92a206-5a79-48c9-9167-009abd79f0c6.jpg)
