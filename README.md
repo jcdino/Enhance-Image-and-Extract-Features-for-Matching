@@ -13,7 +13,7 @@ Basic knowledge required for image signal processing and robot vision is covered
 - Cultivating application skills to image recognition and robot vision
 - 
 ## Context
-1. [Image Blending](#1-image_blending)
+1. [Image Blending](#1-image-blending)
 2. [Histogram Equalization](#2-histogram-equalization)
 3. [Gaussian Filtering](#3-gaussian-filtering)
 4. [Median Filtering](#4-median-filtering)
