@@ -11,7 +11,7 @@ Basic knowledge required for image signal processing and robot vision is covered
 - Learning basic image signal processing methods
 - Understanding feature extraction methods
 - Cultivating application skills to image recognition and robot vision
-- 
+
 ## Context
 1. [Image Blending](#1-image-blending)
 2. [Histogram Equalization](#2-histogram-equalization)
