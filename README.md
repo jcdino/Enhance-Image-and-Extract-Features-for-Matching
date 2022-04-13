@@ -1,17 +1,3 @@
-# Image Processing
-Seoul National University of Science and Technology<br />
-Department of Electronic and IT Media Engineering<br />
-Professor : Byeongkeun Kang<br />
-## Course outline
-Basic knowledge required for image signal processing and robot vision is covered. Various basic knowledge of signal processing and computer vision necessary for image processing is covered, and the method of noise removal, feature extraction, and coding of images as applied is covered. Basic knowledge for robot vision is covered. Conduct a Term Project to increase actual problem-solving skills.<br />
-
-## Educational Goals
-- Understanding the basic characteristics of image signals
-- Practical skills using Matlab
-- Learning basic image signal processing methods
-- Understanding feature extraction methods
-- Cultivating application skills to image recognition and robot vision
-
 ## Context
 1. [Image Blending](#1-image-blending)
 2. [Histogram Equalization](#2-histogram-equalization)
